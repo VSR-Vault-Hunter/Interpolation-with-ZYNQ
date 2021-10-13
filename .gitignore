@@ -22,18 +22,9 @@ sdk/**/*Debug/*
 sdk/**/*Release
 sdk/**/*webtalk
 sdk/.sdk
+sdk/.analytics
 sdk/*.log
-# ignore everything in the hw_platform
-sdk/*hw_platform*/*
-# except
-!sdk/*hw_platform*/*.hdf
-!sdk/*hw_platform*/.*project
-# ignore everything in the BSP
-sdk/*_bsp*/*
-# except
-!sdk/*_bsp*/system.mss
-!sdk/*_bsp*/Makefile
-!sdk/*_bsp*/.*project
+sdk/**/*system_wrapper*
 # include the relevant elf files
 !sdk/**/*Debug/*.elf
 !sdk/**/*Debug/*.elf.size
@@ -60,3 +51,5 @@ proj/*
 
 # keep the empty folders
 !**/.gitkeep
+
+**/creat_rebuild_tcl.md

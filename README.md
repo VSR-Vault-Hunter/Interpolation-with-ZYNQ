@@ -1,8 +1,15 @@
-# Interpolation-with-ZYNQ
+# Rebuild Template
 
-`cd ./proj`
+## 1. rebuild vivado project (vivado gui)
 
-`write_project_tcl -paths_relative_to ../ -origin_dir_override ../ -target_proj_dir ./ -force -use_bd_files rebuild_prj.tcl`
+```tcl
+cd ./proj
 
-`write_bd_tcl -force rebuild.tcl`
+source ./rebuld_prj.tcl
+```
 
+## 2. set Default IP Location
+
+​	Tools -> Settings -> Project Settings -> IP -> IP location -> **./ip_repo/User**
+
+## 3. 
