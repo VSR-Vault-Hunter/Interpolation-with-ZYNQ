@@ -47,7 +47,7 @@ ip_repo/User/*/**
 !ip_repo/User/*/*.prj
 
 # Do not ignore block diagram files
-src/bd
+!src/bd/**
 
 
 # ignore everything in project folder
