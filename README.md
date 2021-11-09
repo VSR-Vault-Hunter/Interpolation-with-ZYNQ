@@ -24,7 +24,7 @@ The overall dataflow of the system is showed below:
 
 The whole system consists of 4 pipelining module: HDMI input, intepolation datapath, frame buffer(VDMA and DDR3) and HDMI output. 
 
-The HDMI input signal (with resolution of 640$\times$480) is first input to a HDMI sink and then converted to RGB signal that will be sent to the intepolation datapath pixel by pixel per channal. Bilinear intepolation is completed in intepolation datapath where the frame resulotion will be upscaled to 1280$\times$960, which will be specified in detail later. 
+The HDMI input signal (with resolution of 640 $\times$ 480) is first input to a HDMI sink and then converted to RGB signal that will be sent to the intepolation datapath pixel by pixel per channal. Bilinear intepolation is completed in intepolation datapath where the frame resulotion will be upscaled to 1280$\times$960, which will be specified in detail later. 
 
 Intepolated signal will be output to VDMA and buffered in the DDR3 memory afterwards to achieve frame buffering. Depth of frame buffer is set to be 3.   
 
